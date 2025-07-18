@@ -2,13 +2,34 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/resourse/static/common.css" />
+    <link rel="stylesheet" href="/resourse/static/header.css" />
+    <link rel="stylesheet" href="/resourse/static/footer.css" />
+    <link rel="stylesheet" href="/resourse/static/home.css" />
 </head>
 <body>
-    <div>
-        <a href="/index.html">
-            <img src="/resourse/static/header-logo.jpg" alt="">
+    <header class="header-container dark-bg">
+        <a class="header-logo" href="/index.html">
+            <img src="/resourse/static/header-logo.jpg" alt="Header Logo" />
         </a>
-    </div>
+        <div class="header-links">
+            <a class="hero-secondary" href="/index.html">header link one</a>
+            <a class="hero-secondary" href="/pages/about.html">header link two</a>
+            <a class="hero-secondary" href="/pages/contact.html">haeder link three</a>
+        </div>
+    </header>
+    <div class="hero-container dark-bg">
+        <div class="hero-text">
+            <h1 class="hero-main">This website is awesome</h1>
+            <p class="hero-secondary">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
+            <form action="/pages/contact.html">
+                <button type="submit" class="hero-button">Sign up</button>
+            </form>
+        </div>
+        <img src="/resourse/static/hero-image.jpg" alt="this is a placeholder for an image">
 </body>
 </html>
